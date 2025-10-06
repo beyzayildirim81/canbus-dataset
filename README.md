@@ -1,125 +1,85 @@
-# CAN-Bus Dataset for Predictive Maintenance
-This repository includes a sample dataset of 500 rows derived from CAN Bus signals.
-The data was collected for a study carried out within the scope of the TÜBİTAK-TEYDEB 1501 Program.
+# CAN Bus Dataset for Predictive Maintenance
 
-📂 File Description
-dataset.csv: Main data file (500 rows, 52 columns).
+This repository includes a sample dataset of **500 rows** derived from CAN Bus signals.
 
-📑 Columns
-AracID: Vehicle ID (anonymized)
+The data was collected for a study carried out within the scope of the **TÜBİTAK-TEYDEB 1501 Program** (A Turkish governmental R&D support program).
 
-DepoSeviyesi: Fuel tank level (%)
+---
 
-DepoSıcaklığı: Fuel tank temperature (°C)
+## 📂 File Description
 
-MotorYağBasıncı: Engine oil pressure (bar)
+- `dataset.csv`: The main data file, containing 500 rows and 52 columns.
 
-MotorYağSeviyesi: Engine oil level (%)
+---
 
-Fren_ArkaSağ2: Rear right brake pressure (sensor 2)
+## 📑 Columns
 
-Fren_ArkaSol2: Rear left brake pressure (sensor 2)
+The table below lists all 52 columns, their English translations, and the corresponding units or descriptions.
 
-Fren_ArkaSol1: Rear left brake pressure (sensor 1)
+| Turkish Column Name | English Translation | Unit / Description |
+| :--- | :--- | :--- |
+| **AracID** | **Vehicle ID** | Anonymized |
+| **DepoSeviyesi** | **Fuel Tank Level** | (%) |
+| **DepoSıcaklığı** | **Fuel Tank Temperature** | (°C) |
+| **MotorYağBasıncı** | **Engine Oil Pressure** | (bar) |
+| **MotorYağSeviyesi** | **Engine Oil Level** | (%) |
+| **Fren\_ArkaSağ2** | **Brake Rear Right 2** | Pressure (sensor 2) |
+| **Fren\_ArkaSol2** | **Brake Rear Left 2** | Pressure (sensor 2) |
+| **Fren\_ArkaSol1** | **Brake Rear Left 1** | Pressure (sensor 1) |
+| **Fren\_ÖnSağ** | **Brake Front Right** | Pressure |
+| **Fren\_ÖnSol** | **Brake Front Left** | Pressure |
+| **Fren\_ArkaSol3** | **Brake Rear Left 3** | Pressure (sensor 3) |
+| **Fren\_ArkaSağ3** | **Brake Rear Right 3** | Pressure (sensor 3) |
+| **Fren\_ArkaSağ1** | **Brake Rear Right 1** | Pressure (sensor 1) |
+| **YardımcıBasınç** | **Auxiliary Brake Pressure** | |
+| **Frenİkincil** | **Secondary Brake Pressure** | |
+| **FrenBirincil** | **Primary Brake Pressure** | |
+| **KompresörDurumu** | **Compressor Status** | Operating status (0/1) |
+| **İçSıcaklık\_Ön** | **Interior Temperature Front** | (°C) |
+| **İçSıcaklık\_Arka** | **Interior Temperature Rear** | (°C) |
+| **AraçHızı** | **Vehicle Speed** | (km/h) |
+| **RetarderTorkYüzdesi** | **Retarder Torque Percentage** | (%) |
+| **YakıtTüketim** | **Fuel Consumption** | (L/100km) |
+| **FrenPedalı** | **Brake Pedal Position** | (%) |
+| **MotorYükYüzdesi** | **Engine Load Percentage** | (%) |
+| **GazPedalı** | **Accelerator Pedal Position** | (%) |
+| **TurboÇıkış** | **Turbo Outlet Pressure** | (bar) |
+| **MotorTorkYüzdesi** | **Engine Torque Percentage** | (%) |
+| **SürücüTork** | **Driver Requested Torque** | (%) |
+| **MotorHız** | **Engine Speed** | (RPM) |
+| **OrtamSıcaklığı** | **Ambient Temperature** | (°C) |
+| **EgzozSıcaklığı** | **Exhaust Temperature** | (°C) |
+| **HavaGiriş** | **Air Intake Pressure** | (bar) |
+| **VitesSeçili** | **Selected Gear** | |
+| **VitesAktif** | **Active Gear** | |
+| **DPF\_Çıkış** | **DPF Outlet Temperature** | (°C) |
+| **ŞarjVolt** | **Charging Voltage** | Alternator output (V) |
+| **AküVolt** | **Battery Voltage** | (V) |
+| **ŞanzımanYağ** | **Transmission Oil Temperature** | (°C) |
+| **SürüşModu** | **Driving Mode** | (Automatic, Manual, etc.) |
+| **DepoSeviye** | **Fuel Tank Level** | Redundant sensor |
+| **HavaGirişSıcaklığı** | **Air Intake Temperature** | (°C) |
+| **ToplamYakıt** | **Total Fuel Consumed** | (L) |
+| **OdoYüksek** | **Odometer Reading** | Vehicle mileage |
+| **YokuşKalkış** | **Hill Start Assist Status** | (0/1) |
+| **DurmaFren** | **Parking Brake Status** | (0/1) |
+| **MotorÇalışmaSüresi** | **Total Engine Operating Hours** | (hours) |
+| **ÖnAksAğırlığı** | **Front Axle Weight** | (kg) |
+| **MotorAlarm** | **Engine System Alarms** | |
+| **SoğutucuSıcaklığı** | **Engine Coolant Temperature** | (°C) |
+| **YakıtMotorSıcaklığı** | **Fuel Engine Temperature** | (°C) |
+| **MotorYağSıcaklığı** | **Engine Oil Temperature** | (°C) |
+| **HavaDebisi** | **Air Flow Rate** | (g/s) |
+| **TurboTürbin** | **Turbo Turbine Temperature** | (°C) |
+| **FrenAlarm** | **Brake System Alarms** | |
+| **AksAlarm** | **Axle System Alarms** | |
+| **SanzımanAlarm** | **Transmission System Alarms** | |
 
-Fren_ÖnSağ: Front right brake pressure
+---
 
-Fren_ÖnSol: Front left brake pressure
+## 🔒 License
 
-Fren_ArkaSol3: Rear left brake pressure (sensor 3)
-
-Fren_ArkaSağ3: Rear right brake pressure (sensor 3)
-
-Fren_ArkaSağ1: Rear right brake pressure (sensor 1)
-
-YardımcıBasınç: Auxiliary brake pressure
-
-Frenİkincil: Secondary brake pressure
-
-FrenBirincil: Primary brake pressure
-
-KompresörDurumu: Compressor operating status (0/1)
-
-İçSıcaklık_Ön: Front interior temperature (°C)
-
-İçSıcaklık_Arka: Rear interior temperature (°C)
-
-AraçHızı: Vehicle speed (km/h)
-
-RetarderTorkYüzdesi: Retarder torque percentage (%)
-
-YakıtTüketim: Fuel consumption (L/100km)
-
-FrenPedalı: Brake pedal position (%)
-
-MotorYükYüzdesi: Engine load percentage (%)
-
-GazPedalı: Accelerator pedal position (%)
-
-TurboÇıkış: Turbo outlet pressure (bar)
-
-MotorTorkYüzdesi: Engine torque percentage (%)
-
-SürücüTork: Driver requested torque (%)
-
-MotorHız: Engine speed (RPM)
-
-OrtamSıcaklığı: Ambient temperature (°C)
-
-EgzozSıcaklığı: Exhaust temperature (°C)
-
-HavaGiriş: Air intake pressure (bar)
-
-VitesSeçili: Selected gear
-
-VitesAktif: Active gear
-
-DPF_Çıkış: Diesel particulate filter outlet temperature (°C)
-
-ŞarjVolt: Alternator output voltage (V)
-
-AküVolt: Battery voltage (V)
-
-ŞanzımanYağ: Transmission oil temperature (°C)
-
-SürüşModu: Driving mode (automatic, manual, etc.)
-
-DepoSeviye: Fuel tank level (redundant sensor)
-
-HavaGirişSıcaklığı: Air intake temperature (°C)
-
-ToplamYakıt: Total fuel consumed (L)
-
-OdoYüksek: Vehicle mileage (odo)
-
-YokuşKalkış: Hill start assist status (0/1)
-
-DurmaFren: Parking brake status (0/1)
-
-MotorÇalışmaSüresi: Total engine operating hours (hours)
-
-ÖnAksAğırlığı: Front axle weight (kg)
-
-MotorAlarm: Alarms under the engine system
-
-SoğutucuSıcaklığı: Engine coolant temperature (°C)
-
-YakıtMotorSıcaklığı: Fuel engine temperature (°C)
-
-MotorYağSıcaklığı: Engine oil temperature (°C)
-
-HavaDebisi: Air flow rate (g/s)
-
-TurboTürbin: Turbo turbine temperature (°C)
-
-FrenAlarm: Alarms under the brake system
-
-AksAlarm: Alarms under the axle system
-
-SanzımanAlarm: Alarms under the transmission system
-
-🔒 License
-This dataset is published under the CC BY 4.0 license.
+This dataset is published under the **CC BY 4.0** license.
 
 
 # CAN-Bus Dataset for Predictive Maintenance
