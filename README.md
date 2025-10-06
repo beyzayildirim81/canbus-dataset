@@ -7,60 +7,115 @@ dataset.csv: Main data file (500 rows, 52 columns).
 
 📑 Columns
 AracID: Vehicle ID (anonymized)
+
 DepoSeviyesi: Fuel tank level (%)
+
 DepoSıcaklığı: Fuel tank temperature (°C)
+
 MotorYağBasıncı: Engine oil pressure (bar)
+
 MotorYağSeviyesi: Engine oil level (%)
+
 Fren_ArkaSağ2: Rear right brake pressure (sensor 2)
+
 Fren_ArkaSol2: Rear left brake pressure (sensor 2)
+
 Fren_ArkaSol1: Rear left brake pressure (sensor 1)
+
 Fren_ÖnSağ: Front right brake pressure
+
 Fren_ÖnSol: Front left brake pressure
+
 Fren_ArkaSol3: Rear left brake pressure (sensor 3)
+
 Fren_ArkaSağ3: Rear right brake pressure (sensor 3)
+
 Fren_ArkaSağ1: Rear right brake pressure (sensor 1)
+
 YardımcıBasınç: Auxiliary brake pressure
+
 Frenİkincil: Secondary brake pressure
+
 FrenBirincil: Primary brake pressure
+
 KompresörDurumu: Compressor operating status (0/1)
+
 İçSıcaklık_Ön: Front interior temperature (°C)
+
 İçSıcaklık_Arka: Rear interior temperature (°C)
+
 AraçHızı: Vehicle speed (km/h)
+
 RetarderTorkYüzdesi: Retarder torque percentage (%)
+
 YakıtTüketim: Fuel consumption (L/100km)
+
 FrenPedalı: Brake pedal position (%)
+
 MotorYükYüzdesi: Engine load percentage (%)
+
 GazPedalı: Accelerator pedal position (%)
+
 TurboÇıkış: Turbo outlet pressure (bar)
+
 MotorTorkYüzdesi: Engine torque percentage (%)
+
 SürücüTork: Driver requested torque (%)
+
 MotorHız: Engine speed (RPM)
+
 OrtamSıcaklığı: Ambient temperature (°C)
+
 EgzozSıcaklığı: Exhaust temperature (°C)
+
 HavaGiriş: Air intake pressure (bar)
+
 VitesSeçili: Selected gear
+
 VitesAktif: Active gear
+
 DPF_Çıkış: Diesel particulate filter outlet temperature (°C)
+
 ŞarjVolt: Alternator output voltage (V)
+
 AküVolt: Battery voltage (V)
+
 ŞanzımanYağ: Transmission oil temperature (°C)
+
 SürüşModu: Driving mode (automatic, manual, etc.)
+
 DepoSeviye: Fuel tank level (redundant sensor)
+
 HavaGirişSıcaklığı: Air intake temperature (°C)
+
 ToplamYakıt: Total fuel consumed (L)
+
 OdoYüksek: Vehicle mileage (odo)
+
 YokuşKalkış: Hill start assist status (0/1)
+
 DurmaFren: Parking brake status (0/1)
+
 MotorÇalışmaSüresi: Total engine operating hours (hours)
+
 ÖnAksAğırlığı: Front axle weight (kg)
+
 MotorAlarm: Alarms under the engine system
+
 SoğutucuSıcaklığı: Engine coolant temperature (°C)
+
 YakıtMotorSıcaklığı: Fuel engine temperature (°C)
+
 MotorYağSıcaklığı: Engine oil temperature (°C)
+
 HavaDebisi: Air flow rate (g/s)
+
 TurboTürbin: Turbo turbine temperature (°C)
+
 FrenAlarm: Alarms under the brake system
+
 AksAlarm: Alarms under the axle system
+
 SanzımanAlarm: Alarms under the transmission system
 
 🔒 License
